@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Članstvo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .intro {
+            position: relative;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            background-image: url('biljke/IMG-4f3846f22cab167e73f5b6a003dfbeb0-V.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .intro h2, .intro p {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .category-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .membership-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .membership-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .membership-card:hover {
+            transform: scale(1.05);
+        }
+
+        .membership-card h3 {
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .membership-card p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .btn {
+            background-color: #5c6bc0;
+            color: white;
+            border-radius: 4px;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #3e4a89;
+        }
+
+        footer {
+    position: relative;
+    z-index: 2;
+    background-color: #4fa3d1; 
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 3;
+}
+    </style>
+</head>
+<body>
+    <header> <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.svg" alt="Moja Galerija" class="logo">
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="onama.html">O Nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="izlozbe.html">Izložbe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clanstvo.html">Članstvo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav></header>
+
+    <div class="intro">
+        <h2>Dobrodošli u galeriju.</h2>
+        <p>Postanite član i uživajte u ekskluzivnim pogodnostima i pristupu umjetničkim izložbama.</p>
+    </div>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-5">Tipovi Članstva</h2>
+        <div class="membership-container">
+            <div class="membership-card">
+                <h3>Osnovno članstvo</h3>
+                <p>Pristup svim javnim izložbama i redovitim događanjima u galeriji.</p>
+                <p><strong>Cijena:</strong> 12 EUR/godišnje</p>
+                <a href="forma.html" class="btn">Prijavite se</a>
+            </div>
+
+            <div class="membership-card">
+                <h3>Premium članstvo</h3>
+                <p>Pristup ekskluzivnim izložbama, predavanjima i radionicama.</p>
+                <p><strong>Cijena:</strong> 30 EUR/godišnje</p>
+                <a href="forma.html" class="btn">Prijavite se</a>
+            </div>
+            <div class="membership-card">
+                <h3>VIP članstvo</h3>
+                <p>Personalizirani pristup umjetnicima, privatni razgled galerije i VIP događaji.</p>
+                <p><strong>Cijena:</strong> 50 EUR/godišnje</p>
+                <a href="forma.html" class="btn">Prijavite se</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-blue text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Galerija Smokvina</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

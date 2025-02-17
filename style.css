@@ -1,0 +1,295 @@
+body {
+    background-color: #f0f8ff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #4fa3d1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #80c7e1;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #dce2f0;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: #4fa3d1;
+    margin-bottom: 20px;
+}
+
+.highlight-box {
+    background-color: #80c7e1; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+
+.highlight-box h3 {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.highlight-box h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.highlight-box h3 a:hover {
+    color: #dce2f0; 
+}
+
+@media (max-width: 768px) {
+    .highlight-box h3 {
+        font-size: 1.1em;
+        padding: 0 10px;
+    }
+}
+
+h4 {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #333333; 
+    font-weight: 400;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+}
+
+.text-container {
+    position: relative; 
+    z-index: 2;
+    padding: 20px;  
+    color: #4fa3d1;  
+    text-align: center;  
+    font-size: 1.3em;  
+}
+
+
+.text-container::after {
+    content: '';  
+    position: absolute;  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #add8e6;  
+    z-index: -1; 
+    padding: 20px; 
+    border-radius: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .text-container {
+        font-size: 1.1em; 
+        padding: 10px; 
+    }
+    .text-container::after {
+        padding: 15px;  
+    }}
+
+.intro {
+    position: relative;
+    color: white;
+    padding: 100px 20px; 
+    text-align: center;
+    background-image: url('IMG-67640e02af84c1901d22fd82b2614bda-V.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.introo {
+    position: relative;
+    color: white;
+    padding: 100px 20px; 
+    text-align: center;
+}
+
+
+.intro-container {
+    position: relative;
+    z-index: 2;
+    background-color: white; 
+    padding: 30px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+}
+
+.introo h2, .introo p {
+    color: #333333; 
+}
+
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.intro h2, .intro p {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    h4 {
+        font-size: 1.1em;
+        line-height: 1.6;
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+
+    .intro {
+        padding: 80px 15px;
+    }
+
+    video {
+        margin-top: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    h4 {
+        font-size: 1em; 
+        line-height: 1.4; 
+        padding: 0 10px; 
+    }}
+
+p {
+    font-size: 1.1em;
+    color: #555555; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.intro h2 {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
+}
+
+section.intro {
+    margin-bottom: 40px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #e6f7ff; 
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+.logo {
+    width: 250px; 
+    height: 250px; 
+    margin-left: -20px; 
+  }
+
+  .navbar {
+    background-color: #007bff; 
+    border-radius: 15px; 
+    padding: 10px 0; 
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+    margin-left: -20px;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 150px;
+        height: 150px;
+        margin-left: 80px; 
+    }
+
+    .rounded-image {
+        border-radius: 15px; }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center; 
+        align-items: center;    
+        flex-grow: 1;          
+    }
+
+    .navbar-nav {
+        margin-left: auto; 
+    }
+}
+
+.karta {
+    margin: 40px auto;
+    text-align: center;
+}
+.karta h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+}
+

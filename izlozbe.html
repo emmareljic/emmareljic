@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Izlozbe</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <style>
+
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                margin-bottom: 20px;
+            }
+
+            .intro {
+                position: relative;
+                color: white;
+                padding: 100px 20px; 
+                text-align: center;
+                background-image: url('izlozbe1.jpg'); 
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed; 
+                background-repeat: no-repeat;
+            }
+            
+            .intro::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5); 
+                z-index: 1;
+            }
+            
+            @media (max-width: 768px) {
+            .intro {
+                background-position: calc(75% + 20px) calc(100% + 70px); 
+              }}
+
+            .exhibition-news {
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .exhibition-news h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+            .exhibition-type, .news-section {
+                margin-bottom: 40px;
+                text-align: left;
+                color: #333;
+            }
+
+            .exhibition-type h3, .news-section h3 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .exhibition-type ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .exhibition-type li {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                margin-bottom: 10px;
+            }
+
+            .news-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-bottom: 20px;
+                transition: transform 0.3s ease;
+            }
+
+            .news-item img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+
+            .news-item:hover {
+                transform: scale(1.03);
+            }
+
+            .news-item h4 {
+                font-size: 1.5rem;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            .news-item p {
+                font-size: 1rem;
+                color: #666;
+            }
+
+            @media (max-width: 768px) {
+                .news-item {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    text-align: center;
+                }
+
+                .news-item img {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            footer {
+    position: relative;
+    z-index: 2;
+    background-color: #4fa3d1; 
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 3;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="logo.svg" alt="Moja Galerija" class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="onama.html">O Nama</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="izlozbe.html">Izložbe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="clanstvo.html">Članstvo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="galerija.html">Galerija</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+       
+        <section class="intro">
+        </section>
+
+    
+        <section class="exhibition-news">
+            <div class="container">
+                <h2>Izložbe i novosti</h2>
+
+               <div class="exhibition-type">
+                    <h3>Vrste izložbi</h3>
+                    <p>Naša galerija nudi različite tipove izložbi koje zadovoljavaju raznovrsne ukuse. Od modernih umjetničkih djela do klasičnih remek-djela, svatko će pronaći nešto.</p>
+                    <ul>
+                        <li><strong>Moderne Izložbe:</strong> Suvremeni umjetnici koriste inovativne metode i tehnike</li>
+                        <li><strong>Klasične Izložbe:</strong> Djela iz prošlih stoljeća s naglaskom na klasike</li>
+                        <li><strong>Tematske Izložbe:</strong> Umjetnička djela inspirirana određenim temama</li>
+                        <li><strong>Interaktivne Izložbe:</strong> Doživite umjetnost kroz interakciju</li>
+                    </ul>
+                </div>
+
+               
+                <div class="news-section">
+                    <h3>Novosti</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="news-item">
+                                <img src="banner.jpg" alt="Novost 1">
+                                <div>
+                                    <h4>Nova izložba: Moderni umjetnici</h4>
+                                    <p>Postava moderne umjetnosti otvara se 20. veljače. Posjetite nas i doživite najnovija djela vrhunskih suvremenih umjetnika koji pomiču granice stvaralaštva.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="news-item">
+                                <img src="priro.jpg" alt="Novost 2">
+                                <div>
+                                    <h4>Tematska noć: Priroda kroz umjetnost</h4>
+                                    <p>U petak, 25. veljače, pozivamo vas na tematsku večer gdje će umjetnici kroz svoje radove prikazati ljepotu prirodnog svijeta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-blue text-white text-center py-3">
+            <div class="container">
+                <p class="mb-0">&copy; 2025 Galerija Smokvina</p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

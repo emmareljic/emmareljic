@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava članstva</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+            margin: 0;
+        }
+
+        main {
+            flex-grow: 1; 
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4fa3d1;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative; 
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        .message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+    position: relative;
+    z-index: 2;
+    background-color: #4fa3d1; 
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.svg" alt="Moja Galerija" class="logo">
+                  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="onama.html">O Nama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="izlozbe.html">Izložbe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clanstvo.html">Članstvo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html">Galerija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <form id="membershipForm">
+                    <h2>Popunite formu za prijavu članstva</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstName">Ime:</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required placeholder="Unesite vaše ime">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="lastName">Prezime:</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required placeholder="Unesite vaše prezime">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required placeholder="Unesite vaš email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Unesite vaš broj telefona">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membershipType">Tip članstva:</label>
+                        <select class="form-control" id="membershipType" name="membershipType" required>
+                            <option value="basic">Osnovno</option>
+                            <option value="premium">Premium</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="privacyPolicy" name="privacyPolicy" required>
+                        <label class="form-check-label" for="privacyPolicy">Slažem se s uvjetima i politikom privatnosti.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3">Pošaljite prijavu</button>
+                </form>
+
+                <div id="successMessage" class="message">Vaša prijava je uspješno poslana!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Galerija Smokvina</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('membershipForm').addEventListener('submit', function(event) {
+            event.preventDefault();  
+    
+            const formData = new FormData(this);
+    
+            setTimeout(() => {
+
+                const response = { success: true };
+    
+                if (response.success) {
+                    document.getElementById('successMessage').style.display = 'block';
+                    document.getElementById('membershipForm').reset(); 
+                } else {
+                    alert("Došlo je do pogreške. Pokušajte ponovo.");
+                }
+            }, 1000); 
+        });
+    </script>
+
+</body>
+</html>

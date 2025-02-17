@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        .intro {
+            position: relative;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            background-image: url('okoliš/IMG-658b8f2c7885f6279d8724f3fc44e2db-V.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .intro h2, .intro p {
+            position: relative;
+            z-index: 2;
+            color: white;
+        }
+
+        .category-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item {
+            margin-bottom: 30px;
+        }
+
+        footer {
+    position: relative;
+    z-index: 2;
+    background-color: #4fa3d1; 
+    color: white;
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+    z-index: 3;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.svg" alt="Moja Galerija" class="logo">
+                  </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="onama.html">O Nama</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="izlozbe.html">Izložbe</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="clanstvo.html">Članstvo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galerija.html">Galerija</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h2>Galerija slika</h2>
+        <p>Zaronite u svijet umjetnosti</p>
+    </div>
+
+    <div class="container my-5">
+        <div id="priroda" class="category">
+            <h2 class="category-title"><u><b>Priroda</b></u></h2>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="biljke/IMG-4f3846f22cab167e73f5b6a003dfbeb0-V.jpg" target="_blank">
+                        <img src="biljke/IMG-4f3846f22cab167e73f5b6a003dfbeb0-V.jpg" alt="Priroda 1">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="biljke/IMG-40ccdfc71679766ab197983ee41b4c74-V.jpg" target="_blank">
+                        <img src="biljke/IMG-40ccdfc71679766ab197983ee41b4c74-V.jpg" alt="Priroda 2">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="biljke/IMG-b6efb786f3f613082ce91a93e567a4ef-V.jpg" target="_blank">
+                        <img src="biljke/IMG-b6efb786f3f613082ce91a93e567a4ef-V.jpg" alt="Priroda 3">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="biljke/IMG-f0cb4861321a4ee7bf13f543954cdaa2-V.jpg" target="_blank">
+                        <img src="biljke/IMG-f0cb4861321a4ee7bf13f543954cdaa2-V.jpg" alt="Priroda 4">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="biljke/IMG-f04418b9af55dded4737412932b86ca5-V.jpg" target="_blank">
+                        <img src="biljke/IMG-f04418b9af55dded4737412932b86ca5-V.jpg" alt="Priroda 5">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color:#007bff; height: 2px; border: none; margin: 30px 0;">
+        <div id="more" class="category mt-5">
+            <h2 class="category-title"><u><b>More</b></u></h2>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-2c74aee16f13af769f78abf1ede497f8-V.jpg" target="_blank">
+                        <img src="more/IMG-2c74aee16f13af769f78abf1ede497f8-V.jpg" alt="More 1">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-2f713f5ada894732778f7a2948f8f6d8-V.jpg" target="_blank">
+                        <img src="more/IMG-2f713f5ada894732778f7a2948f8f6d8-V.jpg" alt="More 2">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-9de9b075a1bdcf028433507f67309acd-V.jpg" target="_blank">
+                        <img src="more/IMG-9de9b075a1bdcf028433507f67309acd-V.jpg" alt="More 3">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-372f668b3be49246e57df7593a9fcdf4-V.jpg" target="_blank">
+                        <img src="more/IMG-372f668b3be49246e57df7593a9fcdf4-V.jpg" alt="More 4">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-10236f3eac7c3fba37195cd1b6f93ec2-V.jpg" target="_blank">
+                        <img src="more/IMG-10236f3eac7c3fba37195cd1b6f93ec2-V.jpg" alt="More 5">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-67640e02af84c1901d22fd82b2614bda-V.jpg" target="_blank">
+                        <img src="more/IMG-67640e02af84c1901d22fd82b2614bda-V.jpg" alt="More 6">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="more/IMG-b0e9cd77c2ba0a537569ea1c34131a3e-V.jpg" target="_blank">
+                        <img src="more/IMG-b0e9cd77c2ba0a537569ea1c34131a3e-V.jpg" alt="More 7">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr style="background-color:#007bff; height: 2px; border: none; margin: 30px 0;">
+        <div id="okoliš" class="category mt-5">
+            <h2 class="category-title"><u><b>Okoliš</b></u></h2>
+            <div class="row">
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-1ca3d07f807e3161bb60e83a7b1de8f0-V.jpg" target="_blank">
+                        <img src="okoliš/IMG-1ca3d07f807e3161bb60e83a7b1de8f0-V.jpg" alt="Okoliš 1">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-29ac6aa6a1f4efbb01db1eb00b632004-V.jpg" target="_blank">
+                        <img src="okoliš/IMG-29ac6aa6a1f4efbb01db1eb00b632004-V.jpg" alt="Okoliš 2">
+                    </a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-073a700229a691c84e2ad6f88825a64a-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-073a700229a691c84e2ad6f88825a64a-V.jpg" alt="Okoliš 3"></a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-658b8f2c7885f6279d8724f3fc44e2db-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-658b8f2c7885f6279d8724f3fc44e2db-V.jpg" alt="Okoliš 4"></a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-893259dae19e6240542dd028730d7585-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-893259dae19e6240542dd028730d7585-V.jpg" alt="Okoliš 5"></a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-a75b4b93c920ec91d67a6b6ce6d0b7cb-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-a75b4b93c920ec91d67a6b6ce6d0b7cb-V.jpg" alt="Okoliš 6"></a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-936752d1107cb15f27dd9a4b9c50ff61-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-936752d1107cb15f27dd9a4b9c50ff61-V.jpg" alt="Okoliš 7"></a>
+                </div>
+                <div class="col-md-4 gallery-item">
+                    <a href="okoliš/IMG-15783046a0ecf96bda53c44667826712-V.jpg" target="_blank">
+                    <img src="okoliš/IMG-15783046a0ecf96bda53c44667826712-V.jpg" alt="Okoliš 8"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-blue text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Galerija Smokvina</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
