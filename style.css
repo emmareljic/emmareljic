@@ -177,7 +177,7 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    h4 {
+    h4,h3,h2,h1 {
         font-size: 1.1em;
         line-height: 1.6;
         padding: 0 10px;
@@ -194,7 +194,7 @@ h4 {
 }
 
 @media (max-width: 480px) {
-    h4 {
+    h4,h3,h2,h1 {
         font-size: 1em; 
         line-height: 1.4; 
         padding: 0 10px; 
@@ -236,7 +236,7 @@ section.intro {
 .logo {
     width: 250px; 
     height: 250px; 
-    margin-left: -20px; 
+    margin-left: -30px; 
   }
 
   .navbar {
@@ -292,4 +292,5 @@ iframe {
 }
 
 }
+
 
